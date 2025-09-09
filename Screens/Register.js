@@ -1,9 +1,12 @@
-import useState from "react";
-import { StyleSheet,Text,View,TouchableOpacity,SafeAreaView,TextInput   } from "react-native";
-const [hidePass,setHidePass]=useState(true);
-const Register=()=>{
+import React,{useState} from "react";
+import { StyleSheet,Text,View,TouchableOpacity,SafeAreaView,   } from "react-native";
+import { TextInput, Card} from "react-native-paper";
+
+
+const Regitser=({navigation})=>{
+  const [hidePass,setHidePass]=useState(true);
     return(
-        <View style={styles.container}>View
+        <View style={styles.container}>
         <SafeAreaView style={styles.safeContainer}>
         <Text style={styles.logo}>Register</Text>
         <View style={styles.formContainer}>
@@ -17,14 +20,14 @@ const Register=()=>{
             <Text style={styles.label}>Password</Text>
             <TextInput placeholder='Password' secureTextEntry={hidePass?true:false} right={
               <TextInput.Icon
-                name="eye"
+                icon="eye"
                 onPress={() => setHidePass(!hidePass)}
               />
             } style={styles.input}/>
             <Text style={styles.label}>Confirm Password</Text>
             <TextInput placeholder='Confirm Password' secureTextEntry={hidePass?true:false} right={
               <TextInput.Icon
-                name="eye"
+                icon="eye"
                 onPress={() => setHidePass(!hidePass)}
               />
             } style={styles.input}/>
@@ -47,7 +50,7 @@ export default Regitser;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderWidht: 10,
+    // borderWidth: 10,
     marginTop: 50,
 
   },

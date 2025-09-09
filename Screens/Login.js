@@ -1,30 +1,43 @@
 
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity,Image } from 'react-native';
 import { SafeAreaView,TextInput } from 'react-native';
+import React, {useState} from 'react';
+
 export default function Login({navigation}) {
+  const [email,setEmail]=useState('');
+  console.log(email);
+  const [password,setPassword]=useState('');
+  const handleLogin=()=>{
+    console.log(`email: ${email}, password: ${password}` );
+  }
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.safeCon}>
-        <Text style={styles.logo}>CMR Institute of Technology</Text>
+        {/* <TouchableWithoutFeedback style={{flex:1}} onPress={()=>Keyboard.dismiss()}> */}
+        <Image source={require('../assets/logo.jpg')} style={styles.image}/>
+        <Text style={styles.logo}>Senthur Murugan Enterprises</Text>
         <View style={styles.formContainer}>
           <View style={styles.field}>
             <Text style={styles.label}>email</Text>
-            <TextInput placeholder='abc@example.component' keyboardType='email-address' style={styles.input} />
+            <TextInput placeholder='abc@example.component' keyboardType='email-address' 
+            onChangeText={val=>setEmail(val)} style={styles.input} />
             <Text style={styles.label}>Password</Text>
-            <TextInput placeholder='Password' secureTextEntry style={styles.input} />
+            <TextInput placeholder='Password' secureTextEntry onChangeText={val=>setPassword(val)} style={styles.input} />
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={handleLogin }>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Login</Text>
             </View>
           </TouchableOpacity>
           <View style={styles.register}>
             <Text>Don't have an account yet?</Text>
-            <TouchableOpacity onPress={()=>navigation.navigate('Regitser')}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Register')}>
               <Text style={styles.registerText}>Register here</Text>
             </TouchableOpacity>
           </View>
         </View> 
+        {/* </TouchableWithoutFeedback> */}
       </SafeAreaView>
     </View>
   );
@@ -33,16 +46,11 @@ export default function Login({navigation}) {
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 10,
+    // borderWidth: 10,
     marginTop: 50,
     justifyContent: 'center',
     alignItems: 'center',
     flex:1,
-  },
-  image: {
-    width: 200,
-    height: 200,
-    resizeMode: 'contain'
   },
   safeCon: {
     flex: 1,
@@ -59,6 +67,13 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     padding: 16,
+  },
+  image:{
+    width:100,
+    height:100,
+    resizeMode:'contain',
+    alignSelf:'center', 
+    borderRadius:100,
   },
   field: {
     marginBottom: 16,
