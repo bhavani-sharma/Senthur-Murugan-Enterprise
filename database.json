@@ -1,0 +1,714 @@
+{
+"stock details":[
+ {
+  "Column2": "S.NO",
+  "DATE - 19\/8\/25": "Item Name",
+  "Column4": "Span (S) (8Ft)",
+  "Column5": "Jackey 2*2 (S)",
+  "Column6": "Sheet 2*3 (1.5 Inch)",
+  "Column7": "Sheet 2*3.75",
+  "Column8": "Sheet 2*3 (1Inch)",
+  "Column9": "Span (B) (10Ft)",
+  "Column10": "Jacky 3*3 (B)",
+  "Column11": "Cuplock-1 mtr",
+  "Column12": "Cuplock-1.5 mtr",
+  "Column13": "Cuplock-3 mtr",
+  "Column14": "M.S.pipe",
+  "Column15": "Jolly",
+  "Column16": "U-Jack",
+  "Column17": "Swing Cuplor"
+ },
+ {
+  "Column2": 1,
+  "DATE - 19\/8\/25": "Bharathy",
+  "Column4": 24,
+  "Column6": 400
+ },
+ {
+  "Column2": 2,
+  "DATE - 19\/8\/25": "Balasubramaniam-Qun interior",
+  "Column6": 7
+ },
+ {
+  "Column2": 3,
+  "DATE - 19\/8\/25": "sakthi enterprises",
+  "Column5": 7,
+  "Column7": 0,
+  "Column8": 0,
+  "Column9": 0,
+  "Column10": 0
+ },
+ {
+  "Column2": 4,
+  "DATE - 19\/8\/25": "kannan jebagarden",
+  "Column7": 166
+ },
+ {
+  "Column2": 5,
+  "DATE - 19\/8\/25": "Suriya selvachandran",
+  "Column6": 90,
+  "Column8": 0,
+  "Column9": 0
+ },
+ {
+  "Column2": 6,
+  "DATE - 19\/8\/25": "Pechi",
+  "Column5": 75,
+  "Column6": 85
+ },
+ {
+  "Column2": 7,
+  "DATE - 19\/8\/25": "Petchi Pandiyan",
+  "Column4": 50,
+  "Column5": 20,
+  "Column6": 150
+ },
+ {
+  "Column2": 8,
+  "DATE - 19\/8\/25": "prabhakar",
+  "Column8": 70
+ },
+ {
+  "Column2": 9,
+  "DATE - 19\/8\/25": "Alagumuthu",
+  "Column4": 82,
+  "Column5": 145,
+  "Column6": 0,
+  "Column8": 401,
+  "Column10": 0
+ },
+ {
+  "Column2": 10,
+  "DATE - 19\/8\/25": "Manoharan",
+  "Column5": 25,
+  "Column7": 130,
+  "Column10": 50
+ },
+ {
+  "Column2": 11,
+  "DATE - 19\/8\/25": "kallathiyan",
+  "Column4": 16,
+  "Column5": 0,
+  "Column6": 62
+ },
+ {
+  "Column2": 12,
+  "DATE - 19\/8\/25": "R shankar nagaramakrishnan ",
+  "Column4": 2,
+  "Column5": 0,
+  "Column6": 6,
+  "Column7": 80
+ },
+ {
+  "Column2": 13,
+  "DATE - 19\/8\/25": "Ananthan Arunachala perumal",
+  "Column4": 18,
+  "Column5": 3
+ },
+ {
+  "Column2": 14,
+  "DATE - 19\/8\/25": "manikandan manikkam",
+  "Column5": 189,
+  "Column6": 69,
+  "Column10": 30
+ },
+ {
+  "Column2": 15,
+  "DATE - 19\/8\/25": "selvamayandi",
+  "Column6": 1
+ },
+ {
+  "Column2": 16,
+  "DATE - 19\/8\/25": "Sivasubramaniam",
+  "Column4": 16,
+  "Column6": 60
+ },
+ {
+  "Column2": 17,
+  "DATE - 19\/8\/25": "krishna Builders",
+  "Column8": 130
+ },
+ {
+  "Column2": 18,
+  "DATE - 19\/8\/25": "Premkumar",
+  "Column5": 10,
+  "Column8": 10
+ },
+ {
+  "Column2": 19,
+  "DATE - 19\/8\/25": "Rathina Sabapathi",
+  "Column8": 150
+ },
+ {
+  "Column2": 20,
+  "DATE - 19\/8\/25": "selvam",
+  "Column5": 10
+ },
+ {
+  "Column2": 21,
+  "DATE - 19\/8\/25": "Syed gani",
+  "Column8": 110
+ },
+ {
+  "Column2": 22,
+  "DATE - 19\/8\/25": "Arun prasad",
+  "Column4": 20
+ },
+ {
+  "Column2": 23,
+  "DATE - 19\/8\/25": "kannan naralapuram",
+  "Column8": 100
+ },
+ {
+  "Column2": 24,
+  "DATE - 19\/8\/25": "Sai Construction",
+  "Column4": 67,
+  "Column5": 407,
+  "Column6": 487,
+  "Column8": 20,
+  "Column9": 4
+ },
+ {
+  "Column2": 25,
+  "DATE - 19\/8\/25": "SSS construction",
+  "Column4": 581,
+  "Column5": 2212,
+  "Column6": 2292,
+  "Column10": 77
+ },
+ {
+  "Column2": 26,
+  "DATE - 19\/8\/25": "Paramasivam",
+  "Column6": 50,
+  "Column7": 26
+ },
+ {
+  "Column2": 27,
+  "DATE - 19\/8\/25": "Ranjith babu",
+  "Column6": 30
+ },
+ {
+  "Column2": 28,
+  "DATE - 19\/8\/25": "P.Kumar",
+  "Column6": 200
+ },
+ {
+  "Column2": 29,
+  "DATE - 19\/8\/25": "Alagu murugan ",
+  "Column5": 43,
+  "Column10": 21
+ },
+ {
+  "Column2": 30,
+  "DATE - 19\/8\/25": "Siva Shankar",
+  "Column5": 1,
+  "Column8": 6
+ },
+ {
+  "Column2": 31,
+  "DATE - 19\/8\/25": "Gnanam Eng Pvt ltd",
+  "Column5": 450,
+  "Column6": 24,
+  "Column7": 51,
+  "Column10": 21,
+  "Column11": 118,
+  "Column12": 137,
+  "Column13": 117,
+  "Column14": 70,
+  "Column16": 71,
+  "Column17": 256
+ },
+ {
+  "Column2": 32,
+  "DATE - 19\/8\/25": "vignesh",
+  "Column6": 200
+ },
+ {
+  "Column2": 33,
+  "DATE - 19\/8\/25": "micheal",
+  "Column6": 200
+ },
+ {
+  "Column2": 34,
+  "DATE - 19\/8\/25": "Selvaraj",
+  "Column4": 28,
+  "Column7": 7,
+  "Column8": 127,
+  "Column9": 3,
+  "Column10": 6
+ },
+ {
+  "Column2": 35,
+  "DATE - 19\/8\/25": "maharaja",
+  "Column4": 20
+ },
+ {
+  "Column2": 36,
+  "DATE - 19\/8\/25": "soosai micheal",
+  "Column8": 34
+ },
+ {
+  "Column2": 37,
+  "DATE - 19\/8\/25": "HML Energy Pvt Ltd",
+  "Column4": 20,
+  "Column5": 45,
+  "Column8": 50
+ },
+ {
+  "Column2": 38,
+  "DATE - 19\/8\/25": "Christoper",
+  "Column5": 22,
+  "Column8": 10
+ },
+ {
+  "Column2": 39,
+  "DATE - 19\/8\/25": "shankar",
+  "Column4": 25,
+  "Column6": 60,
+  "Column8": 115,
+  "Column10": 103
+ },
+ {
+  "Column2": 40,
+  "DATE - 19\/8\/25": "Narayanan",
+  "Column6": 90
+ },
+ {
+  "Column2": 41,
+  "DATE - 19\/8\/25": "Maheshwaran",
+  "Column6": 60
+ },
+ {
+  "Column2": 42,
+  "DATE - 19\/8\/25": "Arikaran mariyappan",
+  "Column4": 34
+ },
+ {
+  "Column2": 43,
+  "DATE - 19\/8\/25": "Kannan senbagam",
+  "Column4": 34,
+  "Column5": 1
+ },
+ {
+  "Column2": 44,
+  "DATE - 19\/8\/25": "Jinesh",
+  "Column4": 10,
+  "Column5": 25,
+  "Column6": 285
+ },
+ {
+  "Column2": 45,
+  "DATE - 19\/8\/25": "Rajkumar ramaiyan",
+  "Column6": 65
+ },
+ {
+  "Column2": 46,
+  "DATE - 19\/8\/25": "lakshmanan",
+  "Column4": 17,
+  "Column5": 47,
+  "Column8": 74
+ },
+ {
+  "Column2": 47,
+  "DATE - 19\/8\/25": "Athiban backianathan",
+  "Column4": 35,
+  "Column5": 90,
+  "Column8": 210
+ },
+ {
+  "Column2": 48,
+  "DATE - 19\/8\/25": "Natarajan S",
+  "Column5": 55,
+  "Column6": 65
+ },
+ {
+  "Column2": 49,
+  "DATE - 19\/8\/25": "Homage Infrastructure",
+  "Column4": 32,
+  "Column5": 110,
+  "Column6": 300
+ },
+ {
+  "Column2": 50,
+  "DATE - 19\/8\/25": "manikandan murugan",
+  "Column4": 50,
+  "Column5": 90,
+  "Column8": 200
+ },
+ {
+  "Column2": 51,
+  "DATE - 19\/8\/25": "Muthu krishnan",
+  "Column4": 10,
+  "Column6": 80
+ },
+ {
+  "Column2": 52,
+  "DATE - 19\/8\/25": "Jebastin",
+  "Column8": 1
+ },
+ {
+  "Column2": 53,
+  "DATE - 19\/8\/25": "Ashwin",
+  "Column6": 100
+ },
+ {
+  "Column2": 54,
+  "DATE - 19\/8\/25": "Ravisankar",
+  "Column6": 40
+ },
+ {
+  "Column2": 55,
+  "DATE - 19\/8\/25": "Ajay",
+  "Column4": 39,
+  "Column5": 176,
+  "Column8": 235
+ },
+ {
+  "Column2": 56,
+  "DATE - 19\/8\/25": "SVS construction",
+  "Column8": 180
+ },
+ {
+  "Column2": 57,
+  "DATE - 19\/8\/25": "Anandha narayanan",
+  "Column4": 25,
+  "Column5": 140,
+  "Column6": 150,
+  "Column8": 129
+ },
+ {
+  "Column2": 58,
+  "DATE - 19\/8\/25": "muthukumar",
+  "Column7": 1
+ },
+ {
+  "DATE - 19\/8\/25": "stock with party",
+  "Column4": 1255,
+  "Column5": 4398,
+  "Column6": 5708,
+  "Column7": 461,
+  "Column8": 2362,
+  "Column9": 7,
+  "Column10": 308,
+  "Column11": 118,
+  "Column12": 137,
+  "Column13": 117,
+  "Column14": 70,
+  "Column15": 0,
+  "Column16": 71,
+  "Column17": 256
+ },
+ {
+  "DATE - 19\/8\/25": "TOTAL stock",
+  "Column4": 1774,
+  "Column5": 5790,
+  "Column6": 7497,
+  "Column7": 802,
+  "Column8": 2440,
+  "Column9": 16,
+  "Column10": 692,
+  "Column11": 826,
+  "Column12": 850,
+  "Column13": 390,
+  "Column14": 70,
+  "Column15": 150,
+  "Column16": 82,
+  "Column17": 496
+ },
+ {
+  "DATE - 19\/8\/25": "Stock in the Yard",
+  "Column4": 519,
+  "Column5": 1392,
+  "Column6": 1789,
+  "Column7": 341,
+  "Column8": 78,
+  "Column9": 9,
+  "Column10": 384,
+  "Column11": 708,
+  "Column12": 713,
+  "Column13": 273,
+  "Column14": 0,
+  "Column15": 150,
+  "Column16": 11,
+  "Column17": 240
+ },
+ {
+  "DATE - 19\/8\/25": "Stock utilization percentage",
+  "Column4": 0.7074408117249155,
+  "Column5": 0.7595854922279792,
+  "Column6": 0.7613712151527278,
+  "Column7": 0.5748129675810474,
+  "Column8": 0.9680327868852459,
+  "Column9": 0.4375,
+  "Column10": 0.44508670520231214,
+  "Column11": 0.14285714285714285,
+  "Column12": 0.16117647058823528,
+  "Column13": 0.3,
+  "Column14": 1,
+  "Column15": 0,
+  "Column16": 0.8658536585365854,
+  "Column17": 0.5161290322580645
+ },
+ null,
+ {
+  "Column4": 1255,
+  "Column5": 4398,
+  "Column6": 5708,
+  "Column7": 461,
+  "Column8": 2362,
+  "Column9": 7,
+  "Column10": 308,
+  "Column11": 118,
+  "Column12": 137,
+  "Column13": 117,
+  "Column14": 70,
+  "Column15": 0,
+  "Column16": 71,
+  "Column17": 256
+ },
+ {
+  "Column4": 0,
+  "Column5": 0,
+  "Column6": 0,
+  "Column7": 0,
+  "Column8": 0,
+  "Column9": 0,
+  "Column10": 0,
+  "Column11": 0,
+  "Column12": 0,
+  "Column13": 0,
+  "Column14": 0,
+  "Column15": 0,
+  "Column16": 0,
+  "Column17": 0
+ }
+],
+"Sheet2":[
+ {
+  "Senthur Murugan Enterprises": "Daily Stock Report - Idle stock vs Party stock on ",
+  "Column7": "08\/19\/2025"
+ },
+ {
+  "Column2": "S No",
+  "Senthur Murugan Enterprises": "Item Name",
+  "Column4": "UOM",
+  "Column5": "Total Stock (Qty)",
+  "Column6": "Party Stock  Rent (Qty)",
+  "Column7": "Stock in Yard (Qty)",
+  "Column8": "Rate Per Month",
+  "Column9": "Total Rental Value of Stock",
+  "Column10": "Party Stock Total Rental Value",
+  "Column11": "Yard Stock Total Rental Value",
+  "Column12": "Party Stock %",
+  "Column13": "Idle Stock %"
+ },
+ {
+  "Column2": 1,
+  "Senthur Murugan Enterprises": "Span (S) (8Ft)",
+  "Column4": "Pcs.",
+  "Column5": 1774,
+  "Column6": 1255,
+  "Column7": 519,
+  "Column8": 100,
+  "Column9": 177400,
+  "Column10": 125500,
+  "Column11": 51900,
+  "Column12": 0.7074408117249155,
+  "Column13": 0.29255918827508454
+ },
+ {
+  "Column2": 2,
+  "Senthur Murugan Enterprises": "Jackey 2*2 (S)",
+  "Column4": "Pcs.",
+  "Column5": 5790,
+  "Column6": 4398,
+  "Column7": 1392,
+  "Column8": 80,
+  "Column9": 463200,
+  "Column10": 351840,
+  "Column11": 111360,
+  "Column12": 0.7595854922279792,
+  "Column13": 0.24041450777202072
+ },
+ {
+  "Column2": 3,
+  "Senthur Murugan Enterprises": "Sheet 2*3 (1.5 Inch)",
+  "Column4": "Pcs.",
+  "Column5": 7497,
+  "Column6": 5708,
+  "Column7": 1789,
+  "Column8": 40,
+  "Column9": 299880,
+  "Column10": 228320,
+  "Column11": 71560,
+  "Column12": 0.7613712151527278,
+  "Column13": 0.23862878484727224
+ },
+ {
+  "Column2": 4,
+  "Senthur Murugan Enterprises": "Sheet 2*3.75",
+  "Column4": "Pcs.",
+  "Column5": 802,
+  "Column6": 461,
+  "Column7": 341,
+  "Column8": 45,
+  "Column9": 36090,
+  "Column10": 20745,
+  "Column11": 15345,
+  "Column12": 0.5748129675810474,
+  "Column13": 0.4251870324189526
+ },
+ {
+  "Column2": 5,
+  "Senthur Murugan Enterprises": "Sheet 2*3 (1Inch)",
+  "Column4": "Pcs.",
+  "Column5": 2440,
+  "Column6": 2362,
+  "Column7": 78,
+  "Column8": 40,
+  "Column9": 97600,
+  "Column10": 94480,
+  "Column11": 3120,
+  "Column12": 0.9680327868852459,
+  "Column13": 0.031967213114754096
+ },
+ {
+  "Column2": 6,
+  "Senthur Murugan Enterprises": "Span (B) (10Ft)",
+  "Column4": "Pcs.",
+  "Column5": 16,
+  "Column6": 7,
+  "Column7": 9,
+  "Column8": 120,
+  "Column9": 1920,
+  "Column10": 840,
+  "Column11": 1080,
+  "Column12": 0.4375,
+  "Column13": 0.5625
+ },
+ {
+  "Column2": 7,
+  "Senthur Murugan Enterprises": "Jacky 3*3 (B)",
+  "Column4": "Pcs.",
+  "Column5": 692,
+  "Column6": 308,
+  "Column7": 384,
+  "Column8": 100,
+  "Column9": 69200,
+  "Column10": 30800,
+  "Column11": 38400,
+  "Column12": 0.44508670520231214,
+  "Column13": 0.5549132947976878
+ },
+ {
+  "Column2": 8,
+  "Senthur Murugan Enterprises": "Cup lock 1 meter",
+  "Column4": "Pcs.",
+  "Column5": 826,
+  "Column6": 118,
+  "Column7": 708,
+  "Column8": 40,
+  "Column9": 33040,
+  "Column10": 4720,
+  "Column11": 28320,
+  "Column12": 0.14285714285714285,
+  "Column13": 0.8571428571428571
+ },
+ {
+  "Column2": 9,
+  "Senthur Murugan Enterprises": "Cup lock 1.5 meter",
+  "Column4": "Pcs.",
+  "Column5": 850,
+  "Column6": 137,
+  "Column7": 713,
+  "Column8": 45,
+  "Column9": 38250,
+  "Column10": 6165,
+  "Column11": 32085,
+  "Column12": 0.16117647058823528,
+  "Column13": 0.8388235294117647
+ },
+ {
+  "Column2": 10,
+  "Senthur Murugan Enterprises": "Cup lock 3 meter",
+  "Column4": "Pcs.",
+  "Column5": 390,
+  "Column6": 117,
+  "Column7": 273,
+  "Column8": 70,
+  "Column9": 27300,
+  "Column10": 8190,
+  "Column11": 19110,
+  "Column12": 0.3,
+  "Column13": 0.7
+ },
+ {
+  "Column2": 11,
+  "Senthur Murugan Enterprises": "M.S.Pipe",
+  "Column4": "Pcs.",
+  "Column5": 70,
+  "Column6": 70,
+  "Column7": 0,
+  "Column8": 100,
+  "Column9": 7000,
+  "Column10": 7000,
+  "Column11": 0,
+  "Column12": 1,
+  "Column13": 0
+ },
+ {
+  "Column2": 12,
+  "Senthur Murugan Enterprises": "Jolly",
+  "Column4": "Pcs.",
+  "Column5": 150,
+  "Column6": 0,
+  "Column7": 150,
+  "Column8": 200,
+  "Column9": 30000,
+  "Column10": 0,
+  "Column11": 30000,
+  "Column12": 0,
+  "Column13": 1
+ },
+ {
+  "Column2": 13,
+  "Senthur Murugan Enterprises": "U-Jack",
+  "Column4": "Pcs.",
+  "Column5": 82,
+  "Column6": 71,
+  "Column7": 11,
+  "Column8": 30,
+  "Column9": 2460,
+  "Column10": 2130,
+  "Column11": 330,
+  "Column12": 0.8658536585365854,
+  "Column13": 0.13414634146341464
+ },
+ {
+  "Column2": 14,
+  "Senthur Murugan Enterprises": "swivel coupler",
+  "Column4": "Pcs.",
+  "Column5": 496,
+  "Column6": 256,
+  "Column7": 240,
+  "Column8": 15,
+  "Column9": 7440,
+  "Column10": 3840,
+  "Column11": 3600,
+  "Column12": 0.5161290322580645,
+  "Column13": 0.4838709677419355
+ },
+ {
+  "Senthur Murugan Enterprises": "Grand Total",
+  "Column5": 21875,
+  "Column6": 15268,
+  "Column7": 6607,
+  "Column8": 1025,
+  "Column9": 1290780,
+  "Column10": 884570,
+  "Column11": 406210,
+  "Column12": 0.6979657142857143,
+  "Column13": 0.3020342857142857
+ }
+]
+}

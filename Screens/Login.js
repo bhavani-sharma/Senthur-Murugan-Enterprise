@@ -3,6 +3,7 @@ import { TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { StyleSheet, Text, View, TouchableOpacity,Image } from 'react-native';
 import { SafeAreaView,TextInput } from 'react-native';
 import React, {useState} from 'react';
+import HomeScreen from './HomeSceen';
 
 export default function Login({navigation}) {
   const [email,setEmail]=useState('');
@@ -27,7 +28,10 @@ export default function Login({navigation}) {
           </View>
           <TouchableOpacity onPress={handleLogin }>
             <View style={styles.button}>
-              <Text style={styles.buttonText}>Login</Text>
+              
+              <TouchableOpacity onPress={()=> navigation.navigate('HomeScreen')}>
+                <Text style={styles.buttonText}>Login</Text>
+              </TouchableOpacity>
             </View>
           </TouchableOpacity>
           <View style={styles.register}>
