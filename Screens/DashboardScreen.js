@@ -1,8 +1,14 @@
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import StockScreen from "./StockScreen";
+import PartyScreen from "./PartyScreen";
+import UserScreen from "./UserScreen";
 
-export default function DashboardScreen({ navigation }) {
-  return (
-    <ScrollView style={styles.container}>
+const Drawer = createDrawerNavigator();
+function DashboardHome({ navigation }) {
+  return(
+  <ScrollView style={styles.container}>
       <Text style={styles.title}>Dashboard</Text>
 
       <View style={styles.card}>
@@ -40,6 +46,17 @@ export default function DashboardScreen({ navigation }) {
         <Text style={styles.navText}>Go to Stocks</Text>
       </TouchableOpacity>
     </ScrollView>
+  );
+}
+export default function DashboardScreen({ navigation }) {
+  return (
+    <Drawer.Navigator initialRouteName="DashboardHome">
+      <Drawer.Screen name="DashboardHome" component={DashboardHome} options={{ title: "Dashboard" }} />
+      <Drawer.Screen name="Stocks" component={StockScreen} />
+      <Drawer.Screen name="Party" component={PartyScreen} />
+      <Drawer.Screen name="User" component={UserScreen} />
+    </Drawer.Navigator>
+    
   );
 }
 
