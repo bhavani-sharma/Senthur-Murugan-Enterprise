@@ -1,6 +1,6 @@
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function UserScreen() {
+export default function UserScreen({navigation}) {
   const records = [
     { date: "21/09/2025", items: ["Item 1", "Item 2", "Item 3", "Item 6"] },
     { date: "22/09/2025", items: ["Item 2", "Item 4"] },
@@ -18,8 +18,8 @@ export default function UserScreen() {
           ))}
         </View>
       ))}
-      <TouchableOpacity style={styles.addBtn}>
-        <Text style={styles.addText}>Add Person</Text>
+      <TouchableOpacity style={styles.addBtn} onPress={() => navigation.navigate("AddItem")}>
+        <Text style={styles.addText}>Add Item</Text>
       </TouchableOpacity>
     </ScrollView>
   );

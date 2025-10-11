@@ -3,7 +3,7 @@ import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import StockScreen from "./StockScreen";
 import PartyScreen from "./PartyScreen";
-import UserScreen from "./UserScreen";
+// import UserScreen from "./UserScreen";
 
 const Drawer = createDrawerNavigator();
 function DashboardHome({ navigation }) {
@@ -54,7 +54,7 @@ export default function DashboardScreen({ navigation }) {
       <Drawer.Screen name="DashboardHome" component={DashboardHome} options={{ title: "Dashboard" }} />
       <Drawer.Screen name="Stocks" component={StockScreen} />
       <Drawer.Screen name="Party" component={PartyScreen} />
-      <Drawer.Screen name="User" component={UserScreen} />
+      {/* <Drawer.Screen name="User" component={UserScreen} /> */}
     </Drawer.Navigator>
     
   );
