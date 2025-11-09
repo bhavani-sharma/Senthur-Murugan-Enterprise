@@ -1,16 +1,45 @@
 
-import { TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { TouchableWithoutFeedback, Keyboard, Alert, ActivityIndicator } from 'react-native';
 import { StyleSheet, Text, View, TouchableOpacity,Image } from 'react-native';
 import { SafeAreaView,TextInput } from 'react-native';
 import React, {useState} from 'react';
 import DashboardScreen from './DashboardScreen';
+import { signIn } from '../supabaseClient';
 
 export default function Login({navigation}) {
   const [email,setEmail]=useState('');
-  console.log(email);
   const [password,setPassword]=useState('');
-  const handleLogin=()=>{
-    console.log(`email: ${email}, password: ${password}` );
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = async () => {
+    // Validate inputs
+    if (!email || !password) {
+      Alert.alert('Error', 'Please enter both email and password');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const { data, error } = await signIn(email, password);
+
+      if (error) {
+        Alert.alert('Login Failed', error.message || 'Invalid email or password');
+        setLoading(false);
+        return;
+      }
+
+      if (data && data.user) {
+        // Successfully logged in
+        console.log('User logged in:', data.user.email);
+        navigation.navigate('Dashboard');
+      }
+    } catch (err) {
+      console.error('Login error:', err);
+      Alert.alert('Error', 'An unexpected error occurred. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   }
   return (
     <View style={styles.container}>
@@ -26,12 +55,13 @@ export default function Login({navigation}) {
             <Text style={styles.label}>Password</Text>
             <TextInput placeholder='Password' secureTextEntry onChangeText={val=>setPassword(val)} style={styles.input} />
           </View>
-          <TouchableOpacity onPress={handleLogin }>
-            <View style={styles.button}>
-              
-              <TouchableOpacity onPress={()=> navigation.navigate('Dashboard')}>
+          <TouchableOpacity onPress={handleLogin} disabled={loading}>
+            <View style={[styles.button, loading && styles.buttonDisabled]}>
+              {loading ? (
+                <ActivityIndicator color="#fff" />
+              ) : (
                 <Text style={styles.buttonText}>Login</Text>
-              </TouchableOpacity>
+              )}
             </View>
           </TouchableOpacity>
           <View style={styles.register}>
@@ -118,5 +148,8 @@ const styles = StyleSheet.create({
     color: 'maroon',
     fontWeight: 'bold',
     marginLeft: 6,
+  },
+  buttonDisabled: {
+    opacity: 0.6,
   },
 });
