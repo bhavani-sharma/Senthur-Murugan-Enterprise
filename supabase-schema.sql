@@ -160,7 +160,10 @@ CREATE TRIGGER update_stock_on_transaction
 -- Function to calculate and update dashboard metrics
 -- =====================================================
 CREATE OR REPLACE FUNCTION calculate_dashboard_metrics()
-RETURNS VOID AS $$
+RETURNS VOID
+SECURITY DEFINER  -- Run with elevated privileges to bypass RLS
+SET search_path = public
+AS $$
 DECLARE
     v_total_revenue DECIMAL(15, 2);
     v_stock_value DECIMAL(15, 2);
