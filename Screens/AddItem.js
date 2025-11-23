@@ -56,41 +56,46 @@ export default function AddItem({ navigation, route }) {
     setItems(newItems);
   };
 
+  // Sanitize and validate transaction date
+  const sanitizeTransactionDate = (date) => {
+    const sanitizedDate = date.trim();
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    if (!dateRegex.test(sanitizedDate)) {
+      throw new Error('Invalid date format. Please use YYYY-MM-DD.');
+    }
+    return sanitizedDate;
+  };
+
+  // Sanitize and validate quantity
+  const sanitizeQuantity = (quantity) => {
+    const sanitizedQuantity = quantity.trim();
+    if (isNaN(parseInt(sanitizedQuantity)) || parseInt(sanitizedQuantity) <= 0) {
+      throw new Error('Invalid quantity. Please enter a positive number.');
+    }
+    return sanitizedQuantity;
+  };
+
   // Handle form submission
   const handleAddItems = async () => {
-    // Validate
-    if (!partyId) {
-      Alert.alert('Error', 'Party information not found');
-      return;
-    }
-
-    if (!transactionDate) {
-      Alert.alert('Error', 'Transaction date is required');
-      return;
-    }
-
-    // Validate items
-    const validItems = items.filter(item => item.productId && item.quantity);
-    if (validItems.length === 0) {
-      Alert.alert('Error', 'Please add at least one item with quantity');
-      return;
-    }
-
-    // Check for invalid quantities
-    const hasInvalidQuantity = validItems.some(
-      item => isNaN(parseInt(item.quantity)) || parseInt(item.quantity) <= 0
-    );
-
-    if (hasInvalidQuantity) {
-      Alert.alert('Error', 'Please enter valid quantities (positive numbers)');
-      return;
-    }
-
-    setLoading(true);
-
     try {
+      // Validate and sanitize transaction date
+      const sanitizedTransactionDate = sanitizeTransactionDate(transactionDate);
+
+      // Validate items
+      const validItems = items.map((item) => {
+        if (!item.productId) {
+          throw new Error('Product ID is required for all items.');
+        }
+        return {
+          productId: item.productId,
+          quantity: sanitizeQuantity(item.quantity),
+        };
+      });
+
+      setLoading(true);
+
       // Format items for transaction
-      const transactionItems = validItems.map(item => ({
+      const transactionItems = validItems.map((item) => ({
         product_id: item.productId,
         quantity: parseInt(item.quantity),
       }));
@@ -98,7 +103,7 @@ export default function AddItem({ navigation, route }) {
       const { data, error } = await addBulkTransactions(
         partyId,
         transactionItems,
-        transactionDate,
+        sanitizedTransactionDate,
         transactionType
       );
 
@@ -112,12 +117,12 @@ export default function AddItem({ navigation, route }) {
       Alert.alert('Success', 'Items added successfully!', [
         {
           text: 'OK',
-          onPress: () => navigation.goBack()
-        }
+          onPress: () => navigation.goBack(),
+        },
       ]);
     } catch (err) {
-      console.error('Unexpected error:', err);
-      Alert.alert('Error', 'An unexpected error occurred');
+      console.error('Validation error:', err.message);
+      Alert.alert('Error', err.message);
     } finally {
       setLoading(false);
     }

@@ -1,8 +1,9 @@
-import {React, useState} from 'react';
+import { React, useState } from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, Image, Alert, ActivityIndicator } from "react-native";
 import { TextInput } from 'react-native';
 import { SafeAreaView } from 'react-native';
 import { addParty } from '../supabaseClient';
+import { sanitizeInput } from '../utils/inputSanitizer'; // Import sanitizeInput
 
 export default function AddUser({ navigation }) {
   const [partyName, setPartyName] = useState('');
@@ -23,11 +24,11 @@ export default function AddUser({ navigation }) {
 
     try {
       const partyData = {
-        party_name: partyName.trim(),
-        contact_person: contactPerson.trim() || null,
-        phone_number: phoneNumber.trim() || null,
-        email: email.trim() || null,
-        address: address.trim() || null,
+        party_name: sanitizeInput(partyName.trim()),
+        contact_person: sanitizeInput(contactPerson.trim()) || null,
+        phone_number: sanitizeInput(phoneNumber.trim()) || null,
+        email: sanitizeInput(email.trim()) || null,
+        address: sanitizeInput(address.trim()) || null,
         is_active: true,
       };
 
@@ -53,11 +54,12 @@ export default function AddUser({ navigation }) {
       setLoading(false);
     }
   };
+
   return (
     <ScrollView style={styles.container}>
       <SafeAreaView>
         <Text style={styles.title}>{`\n`}</Text>
-        <Image source={require('../assets/logo.jpg')} style={styles.image}/>
+        <Image source={require('../assets/logo.jpg')} style={styles.image} />
         <Text style={styles.logo}>Senthur Murugan Enterprises{`\n`}</Text>
         <Text style={styles.title}>Add Party</Text>
 
@@ -123,18 +125,18 @@ export default function AddUser({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        padding:20,
-        backgroundColor:'#fff',
-    },
-    title: {
+  container:{
+    flex:1,
+    padding:20,
+    backgroundColor:'#fff',
+  },
+  title: {
     fontSize: 24,
     fontWeight: '600',
     marginBottom: 20,
     textAlign: 'center',
-    },
-     logo: {
+  },
+  logo: {
     textAlign: 'center',
     fontSize: 24,
     fontWeight: '600',
